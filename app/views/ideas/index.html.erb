@@ -1,1 +1,17 @@
-<h1> hello world this is my first app</h1>
+<h1>Reveal!!! Whats on your MIND???</h1>
+ <img alt="Brand" src="REVELER.png"/>
+ 
+ <!--Panel-->
+<div class="card">
+    <h3 class="card-header primary-color white-text">Featured</h3>
+    <div class="card-block">
+        <h4 class="card-title">Special title treatment</h4>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
+<!--/.Panel-->
+<% @ideas.each do |idea| %>
+    <h3><%= idea.description %></h3>
+    <h4><%= idea.author %></h4>
+    <% end %>
