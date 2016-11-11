@@ -14,6 +14,11 @@ $footer-height: 45px;
     letter-spacing: 2px;
     color: $main-blue;
 }
+
+.brand {
+  height: 50px;
+}
+
 html,body {
     font-family: $primary-font;
 }
@@ -43,3 +48,4 @@ body {
 .footer {
   height: $footer-height;
 }
+
