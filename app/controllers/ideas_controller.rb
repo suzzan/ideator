@@ -5,6 +5,12 @@ class IdeasController < ApplicationController
 
     def create
         @ideas = Idea.create(idea_params)
+        if @idea.valid?
+            
+        else
+            
+        end
+        
         redirect_to root_path
     end
     
