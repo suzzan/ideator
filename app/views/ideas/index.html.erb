@@ -1,11 +1,37 @@
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Reveal!!! Whats on your MIND???
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <%= simple_form_for Idea.new do |f| %>
+             <%= f.input :description %>
+             <%= f.input :author %>
+           
+         
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+         <%= f.submit 'Submit', class: 'btn btn-primary' %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
  <div class="col-xs-12 col-md-6 col-md-offset-3">
- <%= simple_form_for Idea.new do |f| %>
-     <%= f.input :description %>
-     <%= f.input :author %>
-    <%= f.submit 'Submit', class: 'btn btn-primary' %>
- <% end %>
+
  
- <h1>Reveal!!! Whats on your MIND???</h1>
+
  <br>
  <br>
  
