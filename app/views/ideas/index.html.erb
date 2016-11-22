@@ -43,8 +43,8 @@
          </div>
         <h3 class="card-header primary-color white-text"><%= idea.author %></h3>
         <div class="btn-group" role="group">
-        <%= link_to 'Delete', idea_path(Idea), method: :delete, class: 'btn btn-sm btn-danger', data: {confirm: "REALLY???"}  %>
-        <%= link_to 'Revise', edit_idea_path(Idea), method: :revise, class: 'btn btn-sm btn-success'%>
+        <%= link_to 'Delete', idea_path(idea), method: :delete, class: 'btn btn-sm btn-danger', data: {confirm: "REALLY???"}  %>
+        <%= link_to 'Revise', edit_idea_path(idea), class: 'btn btn-sm btn-success'%>
         </div>
     </div>
 <br>

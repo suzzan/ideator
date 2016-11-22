@@ -1,3 +1,3 @@
 class Idea < ActiveRecord::Base
-    validates :deacription, :author, presence: true
+    validates :description, :author, presence: true
 end
