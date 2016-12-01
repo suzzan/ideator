@@ -5,7 +5,7 @@ $footer-height: 45px;
 
 .navbar-default {
     font-family: $secondary-font;
-    background-color: white;
+    background-color: #1C54FF;
 }
 
 .navbar-default .navbar-brand {
@@ -13,14 +13,30 @@ $footer-height: 45px;
     font-size: 30px;
     letter-spacing: 2px;
     color: $main-blue;
+    
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #f2dede;
+    background-color: #286090;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #d9edf7;
+    font-size:20px;
 }
 
 .brand {
-  height: 50px;
+  height: 65px;
 }
 
 html,body {
     font-family: $primary-font;
+   color: #286090;
+   background: url(gGkqaE.jpg) no-repeat right center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /* Styles go here */
@@ -47,5 +63,10 @@ body {
 /* Set the fixed height of the footer here */
 .footer {
   height: $footer-height;
+      color: #286090;
 }
 
+.card {
+  background: rgba(0,0,0,0.1);
+  padding:20px 0px 20px 50px;
+}
